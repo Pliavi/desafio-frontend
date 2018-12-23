@@ -1,0 +1,42 @@
+@import '_variables';
+
+html, body
+  margin: 0
+  font-family: 'Major Mono Display', monospace;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: linear-gradient(to top, $primary-color, $secondary-color);
+  background-attachment: fixed
+  color:#2d2920
+
+.u-bold
+  font-weight: bold
+
+.MainContainer 
+  box-sizing: border-box
+  max-width: 960px
+  padding: 0 48px
+  margin auto
+
+.Separator
+  box-sizing: border-box
+  margin: 20px 0
+  border: 0
+  border-top 1px solid white
+  &.--half
+    width: calc(100% + 32px * 2)
+    margin-left: -32px;
+  &.--full
+    width: calc(100% + 48px * 2)
+    margin-left: -48px;
+  &.--orange
+    border-top-color: $secondary-color
+
+.Title 
+  color: white
+  &.--main
+    font-size: 4rem
+    margin: 2rem 0
+    text-align: center
+
+@import 'CityInput';
+@import 'CityBox';

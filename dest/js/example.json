@@ -1,0 +1,105 @@
+{
+  "by": "cid",
+  "valid_key": false,
+  "results": {
+    "temp": 27,
+    "date": "21/12/2018",
+    "time": "18:42",
+    "condition_code": "4",
+    "description": "Tempestades",
+    "currently": "dia",
+    "cid": "",
+    "city": "Microregion of Caraguatatuba,",
+    "img_id": "4",
+    "humidity": "80",
+    "wind_speedy": "9.66 km/h",
+    "sunrise": "6:12 am",
+    "sunset": "7:48 pm",
+    "condition_slug": "storm",
+    "city_name": "Microregion of Caraguatatuba",
+    "forecast": [
+      {
+        "date": "21/12",
+        "weekday": "Sex",
+        "max": "28",
+        "min": "24",
+        "description": "Tempestades",
+        "condition": "storm"
+      },
+      {
+        "date": "22/12",
+        "weekday": "Sáb",
+        "max": "31",
+        "min": "25",
+        "description": "Tempestades",
+        "condition": "storm"
+      },
+      {
+        "date": "23/12",
+        "weekday": "Dom",
+        "max": "28",
+        "min": "25",
+        "description": "Tempestades",
+        "condition": "storm"
+      },
+      {
+        "date": "24/12",
+        "weekday": "Seg",
+        "max": "25",
+        "min": "23",
+        "description": "Tempestades",
+        "condition": "storm"
+      },
+      {
+        "date": "25/12",
+        "weekday": "Ter",
+        "max": "24",
+        "min": "22",
+        "description": "Tempestades isoladas",
+        "condition": "storm"
+      },
+      {
+        "date": "26/12",
+        "weekday": "Qua",
+        "max": "24",
+        "min": "21",
+        "description": "Tempo nublado",
+        "condition": "cloud"
+      },
+      {
+        "date": "27/12",
+        "weekday": "Qui",
+        "max": "23",
+        "min": "23",
+        "description": "Tempo nublado",
+        "condition": "cloud"
+      },
+      {
+        "date": "28/12",
+        "weekday": "Sex",
+        "max": "25",
+        "min": "22",
+        "description": "Parcialmente nublado",
+        "condition": "cloudly_day"
+      },
+      {
+        "date": "29/12",
+        "weekday": "Sáb",
+        "max": "26",
+        "min": "22",
+        "description": "Tempo nublado",
+        "condition": "cloud"
+      },
+      {
+        "date": "30/12",
+        "weekday": "Dom",
+        "max": "26",
+        "min": "22",
+        "description": "Tempo nublado",
+        "condition": "cloud"
+      }
+    ]
+  },
+  "execution_time": 1.18,
+  "from_cache": false
+}

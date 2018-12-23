@@ -1,0 +1,165 @@
+html,
+body {
+  margin: 0;
+  font-family: 'Major Mono Display', monospace;
+  font-family: 'Ubuntu', sans-serif;
+  background-image: linear-gradient(to top, #fb0, #ff7f00);
+  background-attachment: fixed;
+  color: #2d2920;
+}
+.u-bold {
+  font-weight: bold;
+}
+.MainContainer {
+  box-sizing: border-box;
+  max-width: 960px;
+  padding: 0 48px;
+  margin: auto;
+}
+.Separator {
+  box-sizing: border-box;
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #fff;
+}
+.Separator.--half {
+  width: calc(100% + 32px * 2);
+  margin-left: -32px;
+}
+.Separator.--full {
+  width: calc(100% + 48px * 2);
+  margin-left: -48px;
+}
+.Separator.--orange {
+  border-top-color: #ff7f00;
+}
+.Title {
+  color: #fff;
+}
+.Title.--main {
+  font-size: 4rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.CityInput {
+  position: relative;
+  margin: 20px 0;
+}
+.CityInput .-input {
+  height: 58px;
+  border: 1px solid #d86c00;
+  background: #fff;
+  padding: 0 50px 0 22px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.CityInput .-button {
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 100%;
+  font-size: 20px;
+  color: #505050;
+  top: 0;
+  right: 0;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("./../img/search-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 0;
+}
+.CityBox {
+  background: #fff3e4;
+  color: #505050;
+  box-shadow: 0 0 8px rgba(0,0,0,0.267);
+  padding: 24px 64px;
+  margin: 20px 0 40px 0;
+  position: relative;
+}
+.CityBox .-cityName {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.CityBox .-actualWeather {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 36px;
+}
+.CityBox .-closeButton {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/close-icon.png");
+  position: absolute;
+  right: 24px;
+}
+.Temperature {
+  margin-top: 32px;
+}
+.Temperature .-min,
+.Temperature .-max,
+.Temperature .-sensation {
+  display: inline-block;
+  margin-right: 14px;
+}
+.Temperature .-sensation {
+  margin: 0 0 0 36px;
+}
+.Temperature .-min::before,
+.Temperature .-max::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  margin-right: 6px;
+  background: url("../img/up.png");
+  vertical-align: bottom;
+}
+.Temperature .-min::before {
+  background: url("../img/down.png");
+}
+.Wind {
+  margin-top: 24px;
+}
+.Wind .-velocity,
+.Wind .-humidity {
+  display: inline-block;
+}
+.Wind .-humidity {
+  margin: 0 0 0 36px;
+}
+.Forecast {
+  display: flex;
+  justify-content: space-between;
+}
+.Forecast .Day {
+  text-align: center;
+  font-weight: bold;
+}
+.Forecast .Day .-dayName {
+  color: inherit;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+.Forecast .Day .-temperature {
+  display: inline-block;
+  color: #ff8000;
+}
+.Forecast .Day .-temperature:last-child {
+  margin-left: 4px;
+}
+.WeatherTable .-min,
+.WeatherTable .-max {
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+.WeatherTable .-max {
+  margin-right: 40px;
+}
+.WeatherTable .Capital {
+  font-weight: bold;
+}

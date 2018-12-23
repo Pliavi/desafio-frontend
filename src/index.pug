@@ -1,0 +1,78 @@
+include html.pug
+.MainContainer
+  h1.Title.--main Previsão do tempo
+
+  .CityBox
+    .-closeButton
+    .-cityName --, -- - --
+    .-actualWeather --°C --
+    .Temperature
+      .-min.u-bold --°
+      .-max.u-bold --°
+      .-sensation Sensação
+        | 
+        span.u-bold --°C
+    .Wind
+      .-velocity Vento
+        | 
+        span.u-bold --km/h
+      .-humidity Humidade
+        | 
+        span.u-bold --%
+
+    hr.Separator.--orange.--half
+
+    .Forecast
+      .Day
+        .-dayName Terça
+        .-temperature --°
+        .-temperature --°
+      .Day
+        .-dayName Quarta
+        .-temperature --°
+        .-temperature --°
+      .Day
+        .-dayName Quinta
+        .-temperature --°
+        .-temperature --°
+      .Day
+        .-dayName Sexta
+        .-temperature --°
+        .-temperature --°
+      .Day
+        .-dayName Sábado
+        .-temperature --°
+        .-temperature --°
+
+  .CityInput
+    input.-input(placeholder="Insira aqui o nome da cidade")
+    button.-button
+
+  hr.Separator.--full
+
+  h2.Title Capitais
+
+  .WeatherTable
+    .-left
+      .-header
+        span.-min Min
+        span.-max Máx
+        span.-city Capital
+      .CapitalsTable
+        .Capital
+          span.-min 21
+          span.-max 31
+          span.-city São Paulo
+        .Capital
+          span.-min 21
+          span.-max 31
+          span.-city São Paulo
+
+    .-right
+      .-header
+        span.-min Min
+        span.-max Máx
+        span.-city Capital
+      .CapitalsTable
+
+  script(src="./js/index.js")

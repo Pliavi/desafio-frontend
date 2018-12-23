@@ -1,0 +1,72 @@
+.CityBox
+  background: $city-background-color
+  color: $city-primary-font-color
+  box-shadow: 0 0 8px #0004
+  padding: 24px 64px;
+  margin: 20px 0 40px 0
+  position: relative
+  .-cityName
+    font-size: 1.2rem
+    font-weight: bold
+  .-actualWeather
+    font-size: 4rem
+    font-weight: bold
+    margin-top: 36px
+  .-closeButton
+    cursor: pointer
+    width: 16px;
+    height 16px
+    background-image: url('../img/close-icon.png')
+    position: absolute
+    right: 24px 
+
+.Temperature
+  margin-top: 32px
+  .-min, .-max, .-sensation
+    display: inline-block
+    margin-right 14px
+  .-sensation
+    margin: 0 0 0 36px
+  .-min::before, .-max::before
+    content: ''
+    display: inline-block
+    width: 14px
+    height: 19px;
+    margin-right: 6px
+    background: url("../img/up.png")
+    vertical-align: bottom
+  .-min::before
+    background: url("../img/down.png")
+
+.Wind
+  margin-top: 24px
+  .-velocity, .-humidity
+    display: inline-block
+  .-humidity
+    margin: 0 0 0 36px
+    
+.Forecast 
+  display: flex
+  justify-content: space-between
+  .Day
+    text-align: center
+    font-weight: bold
+    .-dayName
+      color: inherit
+      margin-bottom: 12px
+      font-size: 1.3rem
+    .-temperature
+      display: inline-block
+      color: $city-secondary-font-color
+      &:last-child
+        margin-left: 4px
+    
+.WeatherTable
+  .-min, .-max
+    display: inline-block
+    width 40px
+    text-align: center
+  .-max
+    margin-right 40px
+  .Capital
+    font-weight: bold
